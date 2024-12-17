@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Portfolio</title>
+    <style>
+        /* Allgemeine Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            color: #444;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills ul li {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 0.5rem 1rem;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+        }
+
+        form input, form textarea, form button {
+            display: block;
+            width: 80%;
+            margin: 1rem auto;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Willkommen zu meinem Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#skills">Fähigkeiten</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Über mich -->
+    <section id="about">
+        <h2>Über mich</h2>
+        <p>Hallo! Ich bin Niloofar Shirniahir, ein leidenschaftlicher Webentwickler, der gerne Webseiten erstellt.</p>
+    </section>
+
+    <!-- Fähigkeiten -->
+    <section id="skills" class="skills">
+        <h2>Meine Fähigkeiten</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <form action="#" method="post">
+            <input type="text" placeholder="Ihr Name" required>
+            <input type="email" placeholder="Ihre E-Mail" required>
+            <textarea placeholder="Ihre Nachricht" rows="5" required></textarea>
+            <button type="submit">Nachricht senden</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Niloofar Shirniahir. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
