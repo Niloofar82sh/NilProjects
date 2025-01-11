@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional Portfolio Website">
+  <title>Advanced Portfolio</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background: #f4f4f9;
+      color: #333;
+    }
+
+    /* Header Section */
+    header {
+      background: linear-gradient(to right, #4a90e2, #0078d4);
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    header .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #fff;
+      color: #0078d4;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    header .btn:hover {
+      background: #4a90e2;
+      color: #fff;
+    }
+
+    /* Navigation */
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      background: #333;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #4a90e2;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      margin: 20px 0;
+      padding: 20px;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    section h2 {
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+      color: #0078d4;
+    }
+
+    section p {
+      margin-bottom: 10px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      padding: 10px;
+    }
+
+    .card p {
+      padding: 0 10px 10px;
+      font-size: 0.9rem;
+    }
+
+    .card a {
+      display: block;
+      text-align: center;
+      padding: 10px;
+      background: #0078d4;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 0 0 8px 8px;
+    }
+
+    .card a:hover {
+      background: #005bb5;
+    }
+
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .testimonial {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+
+    .testimonial h3 {
+      color: #0078d4;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #333;
+      color: #fff;
+      margin-top: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Advanced Portfolio</h1>
+    <p>Creative Developer | Passionate Coder | Problem Solver</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm a creative web developer with a passion for building user-friendly websites. I specialize in front-end development and love bringing designs to life.</p>
+    </section>
+
+    <section id="skills">
+      <h2>My Skills</h2>
+      <div class="grid-2">
+        <div>
+            <h3>Technical Skills</h3>
+          <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript & React</li>
+            <li>Node.js</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Teamwork</li>
+            <li>Communication</li>
+            <li>Problem-Solving</li>
+            <li>Time Management</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="grid-2">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x150" alt="Project 1">
+          <h3>Responsive Website</h3>
+          <p>A simple yet elegant website design with responsive features.</p>
+          <a href="#">View Project</a>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/300x150" alt="Project 2">
+          <h3>To-Do App</h3>
+          <p>An interactive to-do list app built with JavaScript.</p>
+          <a href="#">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <h2>What My Clients Say</h2>
+      <div class="testimonials">
+        <div class="testimonial">
+          <h3>John Doe</h3>
+          <p>"Fantastic work! My website looks amazing and works perfectly."</p>
+        </div>
+        <div class="testimonial">
+          <h3>Jane Smith</h3>
+          <p>"Great communication and delivered on time. Highly recommended!"</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>If you'd like to work with me, feel free to reach out at:</p>
+      <p><a href="mailto:example@example.com">example@example.com</a></p>
+      <iframe src="https://www.google.com/maps/embed"></iframe>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Advanced Portfolio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
